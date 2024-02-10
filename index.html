@@ -31,7 +31,7 @@
       <br><button type="button" class="btn btn-primary" onclick="convertTemperature()">Convert</button>
     </form>
   </div>
-  <div id="result" style="margin-top:10px;margin-left:10px; font-size: 20px; color:red;">
+  <div id="result" style="margin-top:10px; margin-left:10px; font-size: 20px; color:red;">
   </div>
 
   <script>
@@ -71,9 +71,11 @@
         u1 = "Réaumur";
       }
 
-      alert("Temperature is " + t1 + " in " + u1);
+      // Display the result in the 'result' div
+      document.getElementById('result').innerHTML = "Temperature is " + t1 + " in " + u1;
     }
   </script>
 </body>
 
 </html>
+
